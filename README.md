@@ -1,6 +1,6 @@
-# Ginga – Ginger Product Quality Inspection System
+# Ginger Product Quality Inspection System
 
-Ginga is an edge-AI product quality inspection system designed to classify ginger images directly on a Raspberry Pi.
+An edge-AI product quality inspection system designed to classify ginger images directly on a Raspberry Pi.
 
 The system combines a live camera, a TensorFlow Lite image classification model, a FastAPI backend, and a Reflex web interface to provide real-time ginger quality inspection.
 
@@ -55,7 +55,7 @@ The system combines a live camera, a TensorFlow Lite image classification model,
 ## Project Structure
 
 ```text
-r4i-ginger-api/
+api/
 │
 ├── backend/
 │   ├── app/
@@ -66,17 +66,17 @@ r4i-ginger-api/
 │   │
 │   ├── models/
 │   │   ├── class_names.json
-│   │   └── r4i_ginger.tflite
+│   │   └── ginger.tflite
 │   │
 │   └── requirements.txt
 │
 ├── frontend/
 │   ├── assets/
-│   │   └── ginja_logo_transparent_512.png
+│   │   └── logo_transparent_512.png
 │   │
-│   ├── r4i_frontend/
+│   ├── frontend/
 │   │   ├── api.py
-│   │   ├── r4i_frontend.py
+│   │   ├── frontend.py
 │   │   ├── state.py
 │   │   └── styles.py
 │   │
@@ -154,7 +154,7 @@ http://entra001.local:8000
 The current model is:
 
 ```text
-backend/models/r4i_ginger.tflite
+backend/models/ginger.tflite
 ```
 
 Input:
@@ -272,7 +272,7 @@ Predicted Ginger Class
 Confidence
      │
      ▼
-Ginga Web Interface
+Web Interface
 ```
 
 ## Technology Stack
@@ -291,7 +291,7 @@ Ginga Web Interface
 
 ## Project Goal
 
-The goal of Ginga is to provide an affordable edge-AI solution for automated ginger product quality inspection.
+The goal is to provide an affordable edge-AI solution for automated ginger product quality inspection.
 
 By performing inference locally on the Raspberry Pi, the system can reduce dependence on cloud services and provide a responsive inspection workflow suitable for environments where connectivity may be limited.
 
